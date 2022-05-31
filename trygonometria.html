@@ -24,9 +24,82 @@
             </ul> 
         </nav>
     </header>
-    <main>
-        <h2> Trygonometria </h2>
-    </main>
+    <section class="section">
+        <h3 class="section__subtitle">Definicje funkcji trygonometrycznych kąta ostrego w trójkącie prostokątnym</h3>
+        <img src="img/trygonometria_trojkat.svg" alt="Trygonometria - Trójkat prostokatny" width="400" height="243" class="section__img">
+        <div class="section__zaleznosci">
+            <div class="section__row">
+                <div class="section__content">sinα=a/c</div>
+                <div class="section__content">cosα=b/c</span></div>
+                <div class="section__content">tgα=a/b</div>
+            </div>    
+            <div class="section__row">
+                <div class="section__content">sinβ=b/c</div>
+                <div class="section__content">cosβ=a/c</div>
+                <div class="section__content">tgβ=b/a</div>
+            </div>
+        </div>
+        <hr class="section__line">
+        <h3 class="section__subtitle">Parzystość i nieparzystość funkcji trygonometrycznych</h3>
+        <div class="section__parzystosc">
+            <div class="section__row">
+                <div class="section__content">sin(−x)=−sinx</div>
+                <div class="section__content">cos(−x)=cos(x)</div>
+            </div>
+            <div class="section__row">
+                <div class="section__content">tg(−x)=−tgx</div>
+                <div class="section__content">ctg(−x)=−ctg(x)</div>
+            </div>
+        </div>
+        <hr class="section__line">    
+        <h3 class="section__subtitle">Wykresy funkcji trygonometrycznych</h3>
+        <h4 class="section__h4">Wykres funkcji sinus</h4>
+        <img src="img/trygonometria_sinus.svg" alt="Wykres sinus" width="800" height="321" class="section__img">
+        <h4 class="section__h4">Wykres funkcji cosinus</h4>
+        <img src="img/trygonometria_cosinus.jpg" alt="Wykres cosinus" width="800" class="section__img">
+        <h4 class="section__h4">Wykres funkcji tangens</h4>
+        <img src="img/trygonometria_tangens.jpg" alt="Wykres tangens" width="800" height="375" class="section__img">
+        <hr class="section__line">
+        <h3 class="section__subtitle">Związki między funkcjami tego samego kąta</h3>
+        <div class="section__zwiazki">
+            <div class="section__row">
+                <div class="section__content">sin<sup>2</sup>α+cos<sup>2</sup>α=1</div>
+            </div>
+            <div class="section__row">
+                <div class="section__content">tgα=sinα/cosα</div>
+            </div>
+        </div>
+        <hr class="section__line">
+        <h3 class="section__subtitle">Funkcje sumy i różnicy katów</h3>
+    <p>Dla dowolnych kątów <span class="accent-parent">\( \alpha  \)</span> i <span class="accent-parent">\( \beta  \)</span> zachodzą równości:<br />
+    <span class="accent-child formula formula-small">\[ \sin \left(\alpha +\beta  \right)=\sin \alpha \cos \beta +\cos \alpha \sin \beta  \]</span><span class="accent-child formula">\[ \cos \left(\alpha +\beta  \right)=\cos \alpha \cos \beta &#8211; \sin \alpha \sin \beta \]</span><span class="accent-child formula">\[ \sin \left(\alpha &#8211; \beta  \right)=\sin \alpha \cos \beta &#8211; \cos \alpha \sin \beta  \]</span><span class="accent-child formula">\[ \cos \left(\alpha &#8211; \beta  \right)=\cos \alpha \cos \beta + \sin \alpha \sin \beta \]</span><br />
+    Ponadto mamy równości:<br />
+    <span class="accent-child formula">\[ \tan \left(\alpha +\beta  \right)=\frac{\tan \alpha +\tan \beta }{1-\tan \alpha  \tan \beta } \]</span><span class="accent-child formula">\[ \tan \left(\alpha -\beta  \right)=\frac{\tan \alpha -\tan \beta }{1+\tan \alpha  \tan \beta } \]</span><br />
+    <small>które zachodzą zawsze, gdy są określone i mianownik prawej strony nie jest zerem.</small></p>
+    <h3>Funkcje podwojonego kąta</h3>
+    <p><span class="accent-child formula">\[ \sin 2\alpha =2\sin \alpha \cos \alpha \]</span><br />
+    <span class="accent-child formula">\[ \cos \alpha = \cos^{2} \alpha- \sin^{2} \alpha = 1- 2 \sin^{2} \alpha \]</span><br />
+    <span class="accent-child formula">\[ 1- 2 \sin^{2} \alpha = 2 \cos^{2} \alpha &#8211; 1 \]</span><br />
+    <span class="accent-child formula">\[ \tan2 \alpha = \frac{2 \tan \alpha}{1-\tan^2 \alpha} \]</span></p>
+    <h3>Sumy, różnice i iloczyny funkcji trygonometrycznych</h3>
+    <p><span class="accent-child formula">\[ \sin \alpha + \sin \beta = 2 \sin \frac{\alpha + \beta}{2} \cos \frac{\alpha &#8211; \beta}{2} \]</span><span class="accent-child formula">\[ \sin \alpha &#8211; \sin \beta = 2 \sin \frac{\alpha &#8211; \beta}{2} \cos \frac{\alpha + \beta}{2} \]</span><span class="accent-child formula">\[ \cos \alpha + \cos \beta = 2 \cos \frac{\alpha + \beta}{2} \cos \frac{\alpha &#8211; \beta}{2} \]</span><span class="accent-child formula">\[ \cos \alpha &#8211; \cos \beta = -2 \sin \frac{\alpha + \beta}{2} \sin \frac{\alpha &#8211; \beta}{2} \]</span></p>
+    <h3>Wybrane wzory redukcyjne</h3>
+    <div class="row">
+    <div class="col-sm-6"><span class="accent-child formula">\[ \sin \left(90 ^{\circ} + \alpha \right) = \cos \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \sin \left(90 ^{\circ} &#8211; \alpha \right) = \cos \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \sin \left(180 ^{\circ} + \alpha \right) = &#8211; \sin \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \sin \left(180 ^{\circ} &#8211; \alpha \right) = \sin \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \cos \left(90 ^{\circ} + \alpha \right) = -\sin \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \cos \left(90 ^{\circ} &#8211; \alpha \right) = \sin \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \cos \left(180 ^{\circ} + \alpha \right) = -\cos \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \cos \left(180 ^{\circ} &#8211; \alpha \right) = -\cos \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \tan \left(180 ^{\circ} + \alpha \right) = \tan \alpha \]</span></div>
+    <div class="col-sm-6"><span class="accent-child formula">\[ \tan \left(180 ^{\circ} &#8211; \alpha \right) = -\tan \alpha \]</span></div>
+    </div>
+    <h3>Okresowość funkcji trygonometrycznych</h3>
+    <p><span class="accent-child formula">\[ \sin \left(\alpha +k*360^{ \circ}\right)=\sin \alpha \]</span><span class="accent-child formula">\[ \cos \left(\alpha +k*360^{ \circ}\right)=\cos \alpha \]</span><span class="accent-child formula">\[ \tan \left(\alpha +k*180^{ \circ}\right)=\tan \alpha \]</span><br />
+    <small>k &#8211; całkowite</small></p>
+    
     <footer class="footer">
         <h5 class="footer__content"><a class="footer__link" href="https://www.matemaks.pl" target="_blank">Matemaks</a> | <a class="footer__link" href="https://www.math.edu.pl" target="_blank">Math.edu</a> | <a class="footer__link" href="https://bezkalkulatora.pl" target="_blank">Bez kalkulatora</a></h5>
         <hr class="footer__line">

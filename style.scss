@@ -130,11 +130,10 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $background-color-secondary;
     padding:  0 0 2em 0;
     
     &__subtitle{
-        padding: 1em 0 0.5em 0;
+        padding: 1em 0 2em 0;
     }
     &__img{
         padding: 1.5em 0 2em 0;
@@ -159,8 +158,17 @@ main{
         flex-direction: row;
         gap: 1em;
     }
+    &__zaleznosci{
+        padding: 0 0 3em 0;
+    }
+    &__parzystosc{
+        padding: 0 0 3em 0;
+    } 
+    &__zwiazki{
+        padding: 0 0 3em 0;
+    }
     &__content{
-        padding: 0.5em 0 0 0;
+        padding: 1em 0 1em 0;
     }
     &__button{
         padding: 0.5em;
