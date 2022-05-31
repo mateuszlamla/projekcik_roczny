@@ -25,14 +25,71 @@
             </ul> 
         </nav>
     </header>
-    <main>
+    <section class="section">
+        <h1 class="section__title"> Geometria analityczna</h1>
+        <h3 class="section__subtitle">Odcinek</h3>
+        <div class="section__flexRow">
+            <img src="/img/geometria_analityczna_odcinek.svg" alt="Geometria analityczna - Odcinek" width="500" class="section__img">
+            <div class="section__box">
+                <p class="section__paragraph">Długość odcinka o końcach w punktach: \( A=\left(x_{A},y_{A} \right) \), \( B=\left(x_{B},y_{B} \right) \) jest dana wzorem:</p>
+                <div class="section__row">\[ \left|AB \right|=\sqrt{\left(x_{B}-x_{A}\right)^{2}+\left( y_{B}-y_{A}\right)^{2}} \]</div>
+                <p class="section__paragraph">Współrzędne środka odcinka \( AB \):</p>
+                <div class="section__row">\[ \left(\frac{x_{A}+x_{B}}{2}, \frac{y_{A}+y_{B}}{2}\right) \]</div>
+            </div>
+        </div>
+        <h3 class="section__subtitle">Prosta</h3>
+        <div class="section__box">
+            <p class="section__paragraph">Równanie ogólne prostej:</p>
+            <div class="section__row">\[ Ax+By+C=0 \] </div>
+            <p class="section__paragraph">Jeżeli \( A=0 \), to prosta jest równoległa do osi \( OX \),<br>
+            jeżeli \( B=0 \), to prosta jest równoległa do osi \( OY \),<br>
+            jeżeli \( C=0 \), to prosta przechodzi przez początek układu współrzędnych.</p>
+        </div>
+    <hr class="section__line">
+    <h3 class="section__subtitle">Równanie kierunkowe prostej</h3>
+    <div class="section__flexRow">
+        <img src="/img/geometria_analityczna_funkcja_liniowa.svg" alt="Geometria analityczna - równanie kierunkowe prostej" width="500" class="section__img">
+        <div class="section__box">
+            <p class="section__paragraph">Jeżeli prosta nie jest równoległa do osi Oy, to ma ona równanie kierunkowe:</p>
+            <div class="section__row">\[ y=ax+b \]</div>
+            <p class="section__paragraph">Liczba \( a \) to współczynnik kierunkowy prostej:</p>
+            <div class="section__row">\[ a=tg \alpha  \]</div>
+            <p class="section__paragraph">Współczynnik \( b \) wyznacza na osi \( OY\) punkt, w którym dana prosta ją przecina.</p>
+            <p class="section__paragraph">Równanie kierunkowe prostej o współczynniku kierunkowym \( a \), która przechodzi przez punkt&nbsp;\( P=\left(x_{0},y_{0} \right) \) </p>
+            <div class="section__row">\[ y=a\left(x-x_{0} \right)+y_{0} \]</div>
+        </div>
+    </div>
+    <div class="section__box">
+        <p class="section__paragraph"> Równanie prostej, która przechodzi przez dwa dane punkty&nbsp;\( A=\left(x_{A},y_{A} \right) \)</p>
+        <div class="section__row">\[ \left(y-y_{A} \right)\left(x_{B}-x_{A} \right)-\left(y_{B}-y_{A} \right)\left(x-x_{A} \right)=0 \]</div>
+    </div>
+    <hr class="section__line">
+    <h3 class="section__subtitle">Prosta i punkt</h3>
+    <div class="section__box">
+        <p class="section__paragraph">Odległość punktu\( P=\left(x_{0},y_{0} \right) \) od prostej o równaniu\( Ax+By+C=0 \) jest dana wzorem:</p>
+        <div class="section__row">\[ \frac{\left|A_{x_{0}} +B_{x_{0}}+C\right|}{\sqrt{A^{2}+B^{2}}} \]</div>
+    </div>
+    <hr class="section__line">
+    <h3 class="section__subtitle">Para prostych</h3>
+    <div class="section__box">
+        <p class="section__paragraph">Dwie proste o równaniach kierunkowych: \( y=a_{1}x+b \) i&nbsp;\( y=a_{2}x+b \) spełniają jeden z następujących warunków:</p>
+        <div class="section__content"> są równoległe, gdy: \( a_{1}=a_{2} \)<br>
+        są prostopadłe, gdy:\( a_{1}*a_{2}=-1 \)</div> 
+    </div>
+    <hr class="section__line">
+    <h3 class="section__subtitle">Równanie okręgu</h3>
+    <p class="section__paragraph">Równanie okręgu o środku w punkcie \( S=\left(a, b \right) \) i promieniu\( r&gt;0 : \) </p>
+    <div class="section__row">\[ \left(x-a \right)^{2}+\left(y-b \right)^{2}=r^{2} \]</div>
         
-    </main>
+    </section>
     <footer class="footer">
         <h5 class="footer__content"><a class="footer__link" href="https://www.matemaks.pl" target="_blank">Matemaks</a> | <a class="footer__link" href="https://www.math.edu.pl" target="_blank">Math.edu</a> | <a class="footer__link" href="https://bezkalkulatora.pl" target="_blank">Bez kalkulatora</a></h5>
         <hr class="footer__line">
         <h3 class="footer__autor"> Mateusz Lamla ZSTI 2022 r.</h3>
         
     </footer>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
