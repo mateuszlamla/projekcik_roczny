@@ -87,14 +87,25 @@
             <p class="section__paragraph">Czyli suma kwadratów długości przyprostokątnych równa się kwadratowi długości przeciwprostokątnej.</p>
         </div>
         <div class="section__box">
-            <a href="#"><button class="section__button"> Sprawdź czy trójkąt jest prostokatny</button></a>
+            <button class="section__button" id="button_pitagoras"> Sprawdź czy trójkąt jest prostokatny</button>
         </div>
-        <hr class="section__line">
         
+        <div style="display: none;" class="section__box" id="form_pitagoras">
+            <form class="section__form" action="?">
+                <input class="section__input" id="input_pitagoras1" type="number" placeholder="przyprostokątna">
+                <input class="section__input" id="input_pitagoras2" type="number" placeholder="przyprostokątna">
+                <input class="section__input" id="input_pitagoras3" type="number" placeholder="przeciwprostokątna"><br>
+                <input class="section__button" type="button" value="Sprawdź" onclick="pitagoras()">
+                <p class="section__paragraph" id="wynik_pitagoras"></p>
+            </form>
+            
+        </div>
+        
+        <hr class="section__line">
         <h3 class="section__subtitle">Związki miarowe w trójkącie prostokątnym</h3>
         <p class="section__paragraph">Załóżmy, że kąt γ jest prosty. Wówczas:</p>
         <div class="section__flexRow">  
-            <img src ="img/planimetria_zwiazki_miarowe.svg" alt="Planimetria - Związki w trójkącie prostokątnym" width="400" class="section__img">
+            <img src ="/img/planimetria_zwiazki_miarowe.svg" alt="Planimetria - Związki w trójkącie prostokątnym" width="400" class="section__img">
             <div class="section__flexRow">
                 <div class="section__box">
                     <div class="section__row">\[ a=c*sin \alpha =c*cos \beta \]</div>
@@ -113,7 +124,7 @@
         
         <h3 class="section__subtitle">Trójkąt równoboczny</h3>
         <div class="section__flexRow">
-            <img src ="img/planimetria_trojkat_rownoboczny.svg" alt="Planimetria - Trójkąt równoboczny" width="300" class="section__img">
+            <img src ="/img/planimetria_trojkat_rownoboczny.svg" alt="Planimetria - Trójkąt równoboczny" width="300" class="section__img">
             <div class="section__box">
                 <div class="section__row">
                     <div class="section__content">\[ h=\frac{a\sqrt{3}}{2} \]</div>
@@ -132,7 +143,48 @@
         <h3 class="footer__autor"> Mateusz Lamla ZSTI 2022 r.</h3>
         
     </footer>
+
     
+    <!-- skrypt do chowania i pokazywania divow(form) -->
+    <!-- <script> 
+        $(".form").hide();
+        $(".form_button").click(function(event){
+            event.preventDefault();
+            $(".form").show();
+            $(this).hide();
+        });
+    </script> -->
+
+    <script>
+        const box = document.getElementById('form_pitagoras');
+        const btn = document.getElementById('button_pitagoras');
+
+        btn.addEventListener('click', function handleClick() {
+        if (box.style.display === 'none') {
+            box.style.display = 'block';
+            btn.textContent = 'Ukryj';
+        } else {
+            box.style.display = 'none';
+            btn.textContent = 'Sprawdź czy trójkąt jest prostokątny';
+        }
+        });
+            
+        let przy1 = document.getElementById('input_pitagoras1');
+        let przy2 = document.getElementById('input_pitagoras2');
+        let przeciw = document.getElementById('input_pitagoras3');
+        function pitagoras(){
+            let przy1 = document.getElementById('input_pitagoras1').value;
+            let przy2 = document.getElementById('input_pitagoras2').value;
+            let przeciw = document.getElementById('input_pitagoras3').value;
+
+            if(Math.pow(przy1, 2) + Math.pow(przy2, 2) == Math.pow(przeciw, 2)){
+                document.getElementById('wynik_pitagoras').innerHTML = "trójkąt o przyprostokątnych " + przy1 + ", " + przy2 + " oraz przeciwprostokątnej " + przeciw + " jest trójkątem prostokątnym"
+            }else{
+                document.getElementById('wynik_pitagoras').innerHTML = "trójkąt o bokach " + przy1 + ", " + przy2 + ", " + przeciw + " nie jest trójkątem prostokątnym"
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
