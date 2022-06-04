@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="sine"
+<svg id="tangent"
    version="1.1"
    baseProfile="full"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:ev="http://www.w3.org/2001/xml-events"
    width="590"
-   height="166">
+   height="276">
 
-  <title>Sine.svg - a nice plot of the sine function</title>
+  <title>Tangent.svg - a nice plot of the tangent function</title>
   <desc>
-     Sine(sin)-function
+     Tangent-function
+     y = tan(x)
      from Wikimedia Commons
-     plot-range: -25/12pi to 25/12pi
-     plotted with three different cubic bezier-curves
-     the bezier-controll-points are calculated to give a very accurate result.
-     symbols in "Computer Modern" (TeX) font embedded
-     created with a plain text editor using GNU/Linux
+     plot-range: -2pi to 2pi
+     plotted with cubic bezier-curves in several intervalls
+     The bezier-controll-points are calculated to give a very accurate result.
+     Accuracy is about 1^-6 units.
+     
+     All symbols are embedded in "Computer Modern" (TeX) font.
+     Created with a plain text editor using GNU/Linux.
 
-     about: http://commons.wikimedia.org/wiki/Image:Sine.svg
+     about: http://commons.wikimedia.org/wiki/Image:Tangent-plot.svg
      source: http://commons.wikimedia.org/
      rights: GNU Free Documentation license,
              Creative Commons Attribution ShareAlike license
@@ -40,27 +42,27 @@
        stroke-width="1" stroke-linecap="square" opacity="1" />
     <line id="ytick" x1="-5" x2="5" y1="0" y2="-0" stroke="black"
        stroke-width="1" stroke-linecap="square" opacity="1" />
-
+    
     <!-- now the used chars in "Computer Modern" font. They are implemented
          as plain paths and not as glyphs just because it didn't work -->
 
-    <!-- s: horiz-adv-x="394.4"-->
-    <path id="s"
-       d="M 33 0 m 175 194 c 22 -4 104 -20 104 -92 c 0 -51 -35 -91 -113 -91
-          c -84 0 -120 57 -139 142 c -3 13 -4 17 -14 17 c -13 0 -13 -7 -13 -25
-          v -132 c 0 -17 0 -24 11 -24 c 5 0 6 1 25 20 c 2 2 2 4 20 23
-          c 44 -42 89 -43 110 -43 c 115 0 161 67 161 139 c 0 53 -30 83 -42 95
-          c -33 32 -72 40 -114 48 c -56 11 -123 24 -123 82 c 0 35 26 76 112 76
-          c 110 0 115 -90 117 -121 c 1 -9 10 -9 12 -9 c 13 0 13 5 13 24 v 101
-          c 0 17 0 24 -11 24 c -5 0 -7 0 -20 -12 c -3 -4 -13 -13 -17 -16
-          c -38 28 -79 28 -94 28 c -122 0 -160 -67 -160 -123
-          c 0 -35 16 -63 43 -85 c 32 -26 60 -32 132 -46 z"/>
-    <!-- i: horiz-adv-x="277.8"-->
-    <path id="i"
-       d="M 33 0 m 144 442 l -140 -11 v -31 c 65 0 74 -6 74 -55 v -269
-          c 0 -45 -11 -45 -78 -45 v -31 c 32 1 86 3 110 3 c 35 0 70 -2 104 -3
-          v 31 c -66 0 -70 5 -70 44 z M 177 75 m 4 541 c 0 32 -25 53 -53 53
-          c -31 0 -53 -27 -53 -53 c 0 -27 22 -53 53 -53 c 28 0 53 21 53 53 z"/>
+    <!-- t: horiz-adv-x="388.9"-->
+    <path id="t"
+       d="M 19 0 m 154 400 h 143 v 31 h -143 v 184 h -25
+          c -1 -82 -31 -189 -129 -193 v -22 h 85 v -276
+          c 0 -123 93 -135 129 -135 c 71 0 99 71 99 135 v 57 h -25 v -55
+          c 0 -74 -30 -112 -67 -112 c -67 0 -67 91 -67 108 z"/>
+    <!-- a: horiz-adv-x="500"-->
+    <path id="a"
+       d="M 42 0 m 291 76 c 4 -40 31 -82 78 -82 c 21 0 82 14 82 95 v 56 h -25
+          v -56 c 0 -58 -25 -64 -36 -64 c -33 0 -37 45 -37 50 v 200
+          c 0 42 0 81 -36 118 c -39 39 -89 55 -137 55
+          c -82 0 -151 -47 -151 -113 c 0 -30 20 -47 46 -47 c 28 0 46 20 46 46
+          c 0 12 -5 45 -51 46 c 27 35 76 46 108 46 c 49 0 106 -39 106 -128
+          v -37 c -51 -3 -121 -6 -184 -36 c -75 -34 -100 -86 -100 -130
+          c 0 -81 97 -106 160 -106 c 66 0 112 40 131 87 z M 333 76 m -7 164
+          v -100 c 0 -95 -72 -129 -117 -129 c -49 0 -90 35 -90 85
+          c 0 55 42 138 207 144 z"/>
     <!-- n: horiz-adv-x="555.6"-->
     <path id="n"
        d="M 32 0 m 78 344 v -268 c 0 -45 -11 -45 -78 -45 v -31
@@ -139,46 +141,63 @@
 
 
 
-  <rect id="background" x="0" y="0" width="590" height="166" fill="white"/>
+  <rect id="background" x="0" y="0" width="590" height="276" fill="white"/>
 
-  <g transform="translate(293.5, 90.5)">
+  <g transform="translate(293.5, 145.5)">
     <!-- grid -->
-    <use xlink:href="#xgridline" x="-251.327412" y="0" />
-    <use xlink:href="#xgridline" x="-188.495559" y="0" />
-    <use xlink:href="#xgridline" x="-125.663706" y="0" />
-    <use xlink:href="#xgridline" x="-62.831853" y="0" />
-    <use xlink:href="#xgridline" x="62.831853" y="0" />
-    <use xlink:href="#xgridline" x="125.663706" y="0" />
-    <use xlink:href="#xgridline" x="188.495559" y="0" />
-    <use xlink:href="#xgridline" x="251.327412" y="0" />
-    <use xlink:href="#ygridline" x="0" y="40" />
-    <use xlink:href="#ygridline" x="0" y="-40" />
+    <g id="grid"
+       transform="scale(1,-1)"
+       style="stroke:black; opacity:0.4; stroke-width:0.5; stroke-linecap:butt">
+      <path id="gridx"
+         d="M -251.327412,-110.5 V 110.5
+            M -188.495559,-110.5 V 110.5
+            M -125.663706,-110.5 V 110.5
+            M -62.831853,-110.5 V 110.5
+            M  62.831853,-110.5 V 110.5
+            M  125.663706,-110.5 V 110.5
+            M  188.495559,-110.5 V 110.5
+            M  251.327412,-110.5 V 110.5"/>
+      <path id="gridy"
+         d="M -261.5,-80 H 261.5
+            M -261.5,-40 H 261.5
+            M -261.5, 40 H 261.5
+            M -261.5, 80 H 261.5"/>
+    </g>
 
     <!-- ticks -->
-    <use xlink:href="#xtick" x="-251.327412" y="0" />
-    <use xlink:href="#xtick" x="-188.495559" y="0" />
-    <use xlink:href="#xtick" x="-125.663706" y="0" />
-    <use xlink:href="#xtick" x="-62.831853" y="0" />
-    <use xlink:href="#xtick" x="62.831853" y="0" />
-    <use xlink:href="#xtick" x="125.663706" y="0" />
-    <use xlink:href="#xtick" x="188.495559" y="0" />
-    <use xlink:href="#xtick" x="251.327412" y="0" />
-    <use xlink:href="#ytick" x="0" y="40" />
-    <use xlink:href="#ytick" x="0" y="-40" />
-
+    <g id="ticks"
+       transform="scale(1,-1)"
+       style="stroke:black; stroke-width:1; stroke-linecap:square">
+      <path id="ticksx"
+         d="M -251.327412,-5 V 5
+            M -188.495559,-5 V 5
+            M -125.663706,-5 V 5
+            M -62.831853,-5 V 5
+            M  62.831853,-5 V 5
+            M  125.663706,-5 V 5
+            M  188.495559,-5 V 5
+            M  251.327412,-5 V 5"/>
+      <path id="ticksy"
+         d="M -5,-80 H 5
+            M -5,-40 H 5
+            M -5, 40 H 5
+            M -5, 80 H 5"/>
+    </g>
+  
+  
     <!-- axes -->
     <line id="x-axis" x1="-282.5" x2="282.5" y1="0" y2="0" stroke="black"
        stroke-width="2" stroke-linecap="square" marker-end="url(#Arrow)" />
-    <line id="y-axis" x1="0" x2="0" y1="70.5" y2="-70.5" stroke="black"
+    <line id="y-axis" x1="0" x2="0" y1="125.5" y2="-125.5" stroke="black"
        stroke-width="2" stroke-linecap="square" marker-end="url(#Arrow)" />
 
     <!-- labels -->
     <g id="xl" transform="translate(288,16) scale(0.02,-0.02)">
       <use xlink:href="#x" x="-285.75" y="0" />
     </g>
-    <g id="sinx" transform="translate(-6,-70) scale(0.02,-0.02)">
-      <use xlink:href="#s" x="-2577.1" y="0" />
-      <use xlink:href="#i" x="-2182.7" y="0" />
+    <g id="tanx" transform="translate(-6,-125) scale(0.02,-0.02)">
+      <use xlink:href="#t" x="-2793.8" y="0" />
+      <use xlink:href="#a" x="-2404.9" y="0" />
       <use xlink:href="#n" x="-1904.9" y="0" />
       <use xlink:href="#parleft" x="-1349.3" y="0" />
       <use xlink:href="#x" x="-960.4" y="0" />
@@ -241,50 +260,74 @@
       </g>
     </g>
     <g id="ylabels" transform="translate(-8,7)">
-      <g id="y1" transform="translate(0,-40) scale(0.02,-0.02)">
-        <use xlink:href="#one" x="-500" y="0" />
+      <g id="ym2" transform="translate(0,80) scale(0.02,-0.02)">
+        <use xlink:href="#minus" x="-1200" y="0" />
+        <use xlink:href="#two" x="-500" y="0" />
       </g>
       <g id="ym1" transform="translate(0,40) scale(0.02,-0.02)">
         <use xlink:href="#minus" x="-1200" y="0" />
         <use xlink:href="#one" x="-500" y="0" />
+      </g>
+      <g id="y1" transform="translate(0,-40) scale(0.02,-0.02)">
+        <use xlink:href="#one" x="-500" y="0" />
+      </g>
+      <g id="y2" transform="translate(0,-80) scale(0.02,-0.02)">
+        <use xlink:href="#two" x="-500" y="0" />
       </g>
     </g>
 
     <!-- the controll points lie on the tangents of the function.
          they are furthermore positioned in a way to minimize the average
          quadratic distance between the bezier-curve and the function. -->
-         
-    <!-- sine curve -->
-    <g transform="scale(40, -40)">
-      <path id="sine-curve" fill="none" stroke="red"
+    
+    <clipPath id="clip_region">
+      <rect x="-6.5375" y="-2.7625" width="13.075" height="5.525" />
+    </clipPath>
+    
+    <!-- tangent curve -->
+    <g transform="scale(40,-40)">
+      <path id="tangent-curve" fill="none" stroke="red"
          stroke-width="0.1px" stroke-linecap="butt"
-         d="M -6.544985,-0.258819
-            C -6.457519,-0.174333 -6.370353,-0.087168 -6.283185,0.000000
-            C -6.081330,0.201855 -5.879645,0.403537 -5.674080,0.572134
-            C -5.507730,0.708567 -5.340209,0.822210 -5.168055,0.897968
-            C -5.016988,0.964447 -4.866337,1.000000 -4.712389,1.000000
-            C -4.558441,1.000000 -4.407790,0.964447 -4.256722,0.897968
-            C -4.084568,0.822209 -3.917046,0.708566 -3.750695,0.572132
-            C -3.545131,0.403536 -3.343447,0.201855 -3.141593,0.000000
-            C -2.939738,-0.201855 -2.738053,-0.403537 -2.532489,-0.572133
-            C -2.366139,-0.708567 -2.198618,-0.822209 -2.026464,-0.897968
-            C -1.875396,-0.964447 -1.724745,-1.000000 -1.570796,-1.000000
-            C -1.416861,-1.000000 -1.266222,-0.964453 -1.115166,-0.897984
-            C -0.942986,-0.822220 -0.775441,-0.708560 -0.609067,-0.572102
-            C -0.403515,-0.403513 -0.201843,-0.201843 0.000000,0.000000
-            C 0.201843,0.201843 0.403515,0.403513 0.609067,0.572102
-            C 0.775441,0.708560 0.942986,0.822220 1.115166,0.897984
-            C 1.266222,0.964453 1.416861,1.000000 1.570796,1.000000
-            C 1.724745,1.000000 1.875396,0.964447 2.026464,0.897968
-            C 2.198618,0.822209 2.366139,0.708567 2.532489,0.572133
-            C 2.738053,0.403537 2.939738,0.201855 3.141593,0.000000
-            C 3.343447,-0.201855 3.545131,-0.403536 3.750695,-0.572132
-            C 3.917046,-0.708566 4.084568,-0.822209 4.256722,-0.897968
-            C 4.407790,-0.964447 4.558441,-1.000000 4.712389,-1.000000
-            C 4.866337,-1.000000 5.016988,-0.964447 5.168055,-0.897968
-            C 5.340209,-0.822210 5.507730,-0.708567 5.674080,-0.572134
-            C 5.879645,-0.403537 6.081330,-0.201855 6.283185,0.000000
-            C 6.370353,0.087168 6.457519,0.174333 6.544985,0.258819" />
+         clip-path="url(#clip_region)"
+         d="M -6.587500,-0.314070
+            C -6.488611,-0.205427 -6.385963,-0.102778 -6.283185,0.000000
+            C -6.152578,0.130608 -6.022393,0.260798 -5.899725,0.403431
+            C -5.783655,0.538391 -5.677121,0.681232 -5.581439,0.845278
+            C -5.462918,1.048481 -5.365292,1.276942 -5.284098,1.554284
+            C -5.186797,1.886646 -5.112518,2.291134 -5.054004,2.812500
+            M -4.370773,-2.812500
+            C -4.312260,-2.291134 -4.237981,-1.886645 -4.140679,-1.554282
+            C -4.059485,-1.276942 -3.961860,-1.048483 -3.843340,-0.845280
+            C -3.747658,-0.681233 -3.641123,-0.538392 -3.525053,-0.403430
+            C -3.402385,-0.260798 -3.272200,-0.130608 -3.141593,0.000000
+            C -3.010984,0.130608 -2.880799,0.260799 -2.758131,0.403433
+            C -2.642061,0.538393 -2.535527,0.681234 -2.439845,0.845280
+            C -2.321325,1.048483 -2.223699,1.276943 -2.142506,1.554284
+            C -2.045204,1.886646 -1.970925,2.291134 -1.912412,2.812500
+            M -1.229181,-2.812500
+            C -1.170667,-2.291134 -1.096388,-1.886645 -0.999086,-1.554282
+            C -0.917893,-1.276942 -0.820267,-1.048482 -0.701747,-0.845279
+            C -0.606065,-0.681233 -0.499531,-0.538392 -0.383461,-0.403432
+            C -0.260793,-0.260798 -0.130608,-0.130608 0.000000,0.000000
+            C 0.130608,0.130608 0.260793,0.260798 0.383461,0.403432
+            C 0.499531,0.538392 0.606065,0.681233 0.701747,0.845279
+            C 0.820267,1.048482 0.917893,1.276942 0.999086,1.554282
+            C 1.096388,1.886645 1.170667,2.291134 1.229181,2.812500
+            M 1.912412,-2.812500
+            C 1.970925,-2.291134 2.045204,-1.886646 2.142506,-1.554284
+            C 2.223699,-1.276943 2.321325,-1.048483 2.439845,-0.845280
+            C 2.535527,-0.681234 2.642061,-0.538393 2.758131,-0.403433
+            C 2.880799,-0.260799 3.010984,-0.130608 3.141593,0.000000
+            C 3.272200,0.130608 3.402385,0.260798 3.525053,0.403430
+            C 3.641123,0.538392 3.747658,0.681233 3.843340,0.845280
+            C 3.961860,1.048483 4.059485,1.276942 4.140679,1.554282
+            C 4.237981,1.886645 4.312260,2.291134 4.370773,2.812500
+            M 5.054004,-2.812500
+            C 5.112518,-2.291134 5.186797,-1.886646 5.284098,-1.554284
+            C 5.365292,-1.276942 5.462918,-1.048481 5.581439,-0.845278
+            C 5.677121,-0.681232 5.783655,-0.538391 5.899725,-0.403431
+            C 6.022393,-0.260798 6.152578,-0.130608 6.283185,0.000000
+            C 6.385963,0.102778 6.488611,0.205427 6.587500,0.314070" />
     </g>
   </g>
 </svg>
